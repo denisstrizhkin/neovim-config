@@ -1,4 +1,7 @@
 return require('packer').startup(function(use)
-  -- Packer can manage itself
+  -- update packer itself
   use 'wbthomason/packer.nvim'
+
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 end)
